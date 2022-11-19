@@ -1,8 +1,8 @@
 ﻿class Program
 {
     static void HW_2(){
-                Queue<char> Input = new Queue<char>();
-        CircularLinkedList<int> Output = new CircularLinkedList<int>();
+        Queue<char> Input = new Queue<char>();
+        Queue<int> Output = new Queue<int>();
 
         while(true){
             Console.Write("Input Size {L,M,S}: ");
@@ -20,18 +20,18 @@
                     //Console.WriteLine("if L");
                     Input.Push('M');
                     Input.Push('M');
-                    Output.Add(1);
+                    Output.Push(1);
                 }
                 else if (getpop == 'M'){
                     //Console.WriteLine("if M");
                     Input.Push('S');
                     Input.Push('S');
                     Input.Push('S');
-                    Output.Add(2);
+                    Output.Push(2);
                 }
                 else if (getpop == 'S'){
                     //Console.WriteLine("if S");
-                    Output.Add(3);
+                    Output.Push(3);
                 }
 
                 if(Input.GetLength() == 0){
