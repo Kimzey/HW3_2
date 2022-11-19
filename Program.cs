@@ -40,9 +40,18 @@
                 //Console.WriteLine("Length = {0}",Input.GetLength());
         }
         Console.WriteLine("_____________________________________________________________________________");
+
+        // while(true){
+        //     if(Output.GetLength() == 0){
+        //         break;
+        //     }
+        //     Console.Write(Output.Pop());
+        // }
+
         for (int i = 0 ; i < Output.GetLength() ; i++){
                 Console.Write(Output.Get(i));
             }   
+
             Console.WriteLine("");
     }
 
